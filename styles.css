@@ -1,9 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    float: left;
+    background-color: black;
+}
+
+h1 {
+    font-family: "Fira Code", monospace;
+    font-size: larger;
+    color: azure;
+}
+
+p {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 20px;
+    color: lightgray;
+}
+
+.window {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+}
+
 .bg-scroll {
-    display: block;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
     z-index: 0;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    opacity: 40%;
+    overflow: hidden;
+    text-overflow: clip;
+    user-select: none;
 }
 
 .login-screen {
-    display: block;
-    z-index: 1;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    z-index: 10;
+    background-color: slategray;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    padding-inline: 10vw;
+    border-color: white;
+    border-width: 3px;
+}
+
+#scroller {
+    color: limegreen;
+    font-size: 18px;
+}
+
+#dec {
+    color: seashell;
 }

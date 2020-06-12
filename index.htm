@@ -1,17 +1,31 @@
+<!DOCTYPE html-->
+
 <html>
 
 <head>
     <title>The Forge</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="script.js"></script>
 </head>
 
-<body>
-    <div class="bg-scroll">
-        <p>This should be behind the test page text</p>
-    </div>
-    <div class="login-screen">
-        <p>This is a test page</p>
+<body onload="draw()">
+    <div class="window">
+        <div class="bg-scroll">
+            <!-- Don't worry, these numbers are just randomly generated. -->
+            <p id="scroller"></p>
+        </div>
+        <div class="login-screen">
+            <!-- There's no point looking in the source for answers. -->
+            <!-- They are already out there. -->
+            <h1>Enter your credentials</h1>
+            <input type="text" name="pass" id="pass"> <input type="button" onclick="testInput()" value="SUBMIT" id="submit">
+            <p>Beep boop.</p>
+            <div class="decrypted"></div>
+        </div>
     </div>
 </body>
 
