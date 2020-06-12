@@ -1,0 +1,9 @@
+.bg-scroll {
+    display: block;
+    z-index: 0;
+}
+
+.login-screen {
+    display: block;
+    z-index: 1;
+}
