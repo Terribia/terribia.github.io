@@ -2,7 +2,7 @@ function testInput() {
     var inp = document.getElementById("pass").value.toLowerCase();
     var res = [];
     var pol = "";
-    var txt = "o=Um6-KJkAqK8";
+    var txt = "o=usr53eYMlRC";
     const a = "abcdefghijklmnopqrstuvwxyz"
     for (i = 0; i < inp.length; i++) {
         res.push(a.indexOf(inp[i]));
